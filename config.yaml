@@ -1,0 +1,24 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+  f_bashrc:
+    src: bashrc
+    dst: ~/.bashrc
+  f_xprofile:
+    src: xprofile
+    dst: ~/.xprofile
+  f_xinitrc:
+    src: xinitrc
+    dst: ~/.xinitrc
+profiles:
+  manjaro:
+    dotfiles:
+    - f_zshrc
+    - f_bashrc
+    - f_xprofile
+    - f_xinitrc
