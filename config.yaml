@@ -15,9 +15,6 @@ dotfiles:
   f_xinitrc:
     src: xinitrc
     dst: ~/.xinitrc
-  d_icons:
-    src: icons
-    dst: ~/.icons
   d_irssi:
     src: irssi
     dst: ~/.irssi
@@ -39,6 +36,9 @@ dotfiles:
   f_gitconfig:
     src: gitconfig
     dst: ~/.gitconfig
+  d_breeze-red:
+    src: icons/Breeze-Red
+    dst: ~/.icons/Breeze-Red
 profiles:
   manjaro:
     dotfiles:
@@ -46,7 +46,6 @@ profiles:
     - f_bashrc
     - f_xprofile
     - f_xinitrc
-    - d_icons
     - d_irssi
     - d_fonts
     - d_xdman
@@ -54,3 +53,4 @@ profiles:
     - d_scripts
     - d_modified
     - f_gitconfig
+    - d_breeze-red
