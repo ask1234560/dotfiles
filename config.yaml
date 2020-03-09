@@ -15,6 +15,30 @@ dotfiles:
   f_xinitrc:
     src: xinitrc
     dst: ~/.xinitrc
+  d_icons:
+    src: icons
+    dst: ~/.icons
+  d_irssi:
+    src: irssi
+    dst: ~/.irssi
+  d_fonts:
+    src: local/share/fonts
+    dst: ~/.local/share/fonts
+  d_xdman:
+    src: xdman
+    dst: ~/.xdman
+  f_init.zsh:
+    src: zplug/init.zsh
+    dst: ~/.zplug/init.zsh
+  d_scripts:
+    src: scripts
+    dst: ~/.scripts
+  d_modified:
+    src: Pictures/.wallpaper/modified
+    dst: ~/Pictures/.wallpaper/modified
+  f_gitconfig:
+    src: gitconfig
+    dst: ~/.gitconfig
 profiles:
   manjaro:
     dotfiles:
@@ -22,3 +46,11 @@ profiles:
     - f_bashrc
     - f_xprofile
     - f_xinitrc
+    - d_icons
+    - d_irssi
+    - d_fonts
+    - d_xdman
+    - f_init.zsh
+    - d_scripts
+    - d_modified
+    - f_gitconfig
