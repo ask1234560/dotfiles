@@ -39,6 +39,27 @@ dotfiles:
   d_breeze-red:
     src: icons/Breeze-Red
     dst: ~/.icons/Breeze-Red
+  d_mpv:
+    src: config/mpv
+    dst: ~/.config/mpv
+  d_nvim:
+    src: config/nvim
+    dst: ~/.config/nvim
+  d_htop:
+    src: config/htop
+    dst: ~/.config/htop
+  d_newsboat:
+    src: config/newsboat
+    dst: ~/.config/newsboat
+  d_ranger:
+    src: config/ranger
+    dst: ~/.config/ranger
+  d_tilix:
+    src: config/tilix
+    dst: ~/.config/tilix
+  d_vimiv:
+    src: config/vimiv
+    dst: ~/.config/vimiv
 profiles:
   manjaro:
     dotfiles:
@@ -54,3 +75,10 @@ profiles:
     - d_modified
     - f_gitconfig
     - d_breeze-red
+    - d_mpv
+    - d_nvim
+    - d_htop
+    - d_newsboat
+    - d_ranger
+    - d_tilix
+    - d_vimiv
