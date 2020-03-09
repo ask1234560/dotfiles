@@ -42,9 +42,6 @@ dotfiles:
   d_mpv:
     src: config/mpv
     dst: ~/.config/mpv
-  d_nvim:
-    src: config/nvim
-    dst: ~/.config/nvim
   d_htop:
     src: config/htop
     dst: ~/.config/htop
@@ -76,7 +73,6 @@ profiles:
     - f_gitconfig
     - d_breeze-red
     - d_mpv
-    - d_nvim
     - d_htop
     - d_newsboat
     - d_ranger
