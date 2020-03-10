@@ -52,9 +52,9 @@ dotfiles:
     src: config/ranger
     dst: ~/.config/ranger
     instignore:
-            - "*/__pycache__"
+    - "*/__pycache__"
     upignore:
-            - "*/__pycache__"
+    - "*/__pycache__"
   d_tilix:
     src: config/tilix
     dst: ~/.config/tilix
@@ -68,9 +68,9 @@ dotfiles:
     src: config/nvim
     dst: ~/.config/nvim
     instignore:
-            - "*/plugged"
+    - "*/plugged"
     upignore:
-            - "*/plugged"
+    - "*/plugged"
   f_plug.vim:
     src: local/share/nvim/site/autoload/plug.vim
     dst: ~/.local/share/nvim/site/autoload/plug.vim
