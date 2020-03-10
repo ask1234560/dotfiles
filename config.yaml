@@ -51,12 +51,25 @@ dotfiles:
   d_ranger:
     src: config/ranger
     dst: ~/.config/ranger
+    instignore:
+            - "*/__pycache__"
   d_tilix:
     src: config/tilix
     dst: ~/.config/tilix
   d_vimiv:
     src: config/vimiv
     dst: ~/.config/vimiv
+  d_wallpapers_modified:
+    src: Pictures/Wallpapers/modified
+    dst: ~/Pictures/Wallpapers/modified
+  d_nvim:
+    src: config/nvim
+    dst: ~/.config/nvim
+    instignore:
+            - "*/plugged"
+  f_plug.vim:
+    src: local/share/nvim/site/autoload/plug.vim
+    dst: ~/.local/share/nvim/site/autoload/plug.vim
 profiles:
   manjaro:
     dotfiles:
@@ -78,3 +91,6 @@ profiles:
     - d_ranger
     - d_tilix
     - d_vimiv
+    - d_wallpapers_modified
+    - d_nvim
+    - f_plug.vim
