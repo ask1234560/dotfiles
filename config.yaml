@@ -24,9 +24,6 @@ dotfiles:
   d_xdman:
     src: xdman
     dst: ~/.xdman
-  f_init.zsh:
-    src: zplug/init.zsh
-    dst: ~/.zplug/init.zsh
   d_scripts:
     src: scripts
     dst: ~/.scripts
