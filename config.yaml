@@ -81,7 +81,6 @@ profiles:
     - d_irssi
     - d_fonts
     - d_xdman
-    - f_init.zsh
     - d_scripts
     - d_modified
     - f_gitconfig
