@@ -66,9 +66,9 @@ dotfiles:
     dst: ~/.config/nvim
     instignore:
     - "*/plugged"
+    - "*/.git"
     upignore:
     - "*/plugged"
-    - "*/.git"
   f_plug.vim:
     src: local/share/nvim/site/autoload/plug.vim
     dst: ~/.local/share/nvim/site/autoload/plug.vim
