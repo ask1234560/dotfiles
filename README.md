@@ -20,4 +20,4 @@ configs, scripts, themes and wallpapers included
    * < config.yaml |  awk '{gsub(/manjaro/,"kali")} {print $0}' | tee config.yaml
 * ./dotdrop.sh install
 * to remove backup files
-   * find ~ -regextype grep -regex '.*/*dotdropbak' -exec rm {} \;
+   * find ~ -regextype grep -regex '.*/*dotdropbak' -exec rm {} \\;
