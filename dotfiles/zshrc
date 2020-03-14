@@ -1,4 +1,4 @@
-source /home/ananthu/.zplug/init.zsh
+source ~/.zplug/init.zsh
 
 # Plugins
 # Supports oh-my-zsh plugins and the like
