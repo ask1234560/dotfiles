@@ -2,6 +2,10 @@ config:
   backup: true
   create: true
   dotpath: dotfiles
+  instignore:
+  - "*/README.md"
+  upignore:
+  - "*/README.md"
 dotfiles:
   f_zshrc:
     src: zshrc
