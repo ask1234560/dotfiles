@@ -11,4 +11,5 @@ configs, scripts, themes and wallpapers included
 * cd ~
 * git clone https://github.com/ask1234560/dotfiles 
 * cd dotfiles
-* pipenv 
+* pipenv --three
+* git submodules
