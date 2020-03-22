@@ -3,9 +3,9 @@ config:
   create: true
   dotpath: dotfiles
   instignore:
-  - "*/README.md"
+  - '*/README.md'
   upignore:
-  - "*/README.md"
+  - '*/README.md'
 dotfiles:
   f_zshrc:
     src: zshrc
@@ -53,9 +53,9 @@ dotfiles:
     src: config/ranger
     dst: ~/.config/ranger
     instignore:
-    - "*/__pycache__"
+    - '*/__pycache__'
     upignore:
-    - "*/__pycache__"
+    - '*/__pycache__'
   d_tilix:
     src: config/tilix
     dst: ~/.config/tilix
@@ -69,14 +69,17 @@ dotfiles:
     src: config/nvim
     dst: ~/.config/nvim
     instignore:
-    - "*/plugged"
-    - "*/.git"
+    - '*/plugged'
+    - '*/.git'
     upignore:
-    - "*/plugged"
-    - "*/.git"
+    - '*/plugged'
+    - '*/.git'
   f_plug.vim:
     src: local/share/nvim/site/autoload/plug.vim
     dst: ~/.local/share/nvim/site/autoload/plug.vim
+  d_dconf_bak:
+    src: config/dconf_BAK
+    dst: ~/.config/dconf_BAK
 profiles:
   manjaro:
     dotfiles:
@@ -100,3 +103,4 @@ profiles:
     - d_wallpapers_modified
     - d_nvim
     - f_plug.vim
+    - d_dconf_bak
