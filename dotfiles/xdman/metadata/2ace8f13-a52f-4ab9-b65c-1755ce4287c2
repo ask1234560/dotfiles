@@ -1,0 +1,5 @@
+type: 1000
+url: https://r8---sn-ci5gup-h556.googlevideo.com/videoplayback?id=ffbc1bf4071dccd4&itag=22&source=youtube&requiressl=yes&ei=4q5tXunLM83a7QT137vYAQ&susc=ytcp&mime=video/mp4&dur=1430.836&lmt=1582705577646667&txp=2211222&ip=0.0.0.0&ipbits=0&expire=1584275298&sparams=dur,ei,expire,id,ip,ipbits,itag,lmt,mh,mime,mip,mm,mn,ms,mv,mvi,pcm2cms,pl,requiressl,source,susc&signature=1FF7EDA3E1BBFDF176A5878DD812DC861B8EC9FB.59CABCA5AC4EA2998DFF8333F396617274E8ED29&key=cms1&cms_redirect=yes&mh=zv&mip=106.203.117.111&mm=31&mn=sn-ci5gup-h556&ms=au&mt=1584247895&mv=m&mvi=7&pcm2cms=yes&pl=19
+size: 234379472
+header: sec-fetch-dest:video
+header: user-agent:Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36
