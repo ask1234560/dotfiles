@@ -40,8 +40,8 @@ name='Terminal'
 
 [custom-keybindings/custom6]
 binding='<Super>f'
-command='google-chrome-stable'
-name='Google chrome'
+command='chromium'
+name='Chromium'
 
 [custom-keybindings/custom7]
 binding='<Super>e'
