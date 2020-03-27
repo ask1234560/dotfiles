@@ -2,7 +2,7 @@
 
 # hsetroot -fill Arch-Linux-Wallpaper-04-1920x1080.jpg -tint '#9ccfe6' -write Arch-Linux-Wallpaper-04-1920x1080.jpg
 
-if [ $# -ne 0 ]; then
+if [ "$#" -ne 0 ]; then
 
 targetDir="/home/ananthu/Pictures/.wallpaper/modified"
 bgfile="$( ls -A $targetDir | shuf -n 1 )"
