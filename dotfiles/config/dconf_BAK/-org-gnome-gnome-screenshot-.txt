@@ -1,0 +1,7 @@
+[/]
+auto-save-directory='file:///home/ananthu/Pictures/Screenshots/'
+border-effect='none'
+delay=0
+include-border=true
+include-pointer=false
+last-save-directory='file:///home/ananthu/Desktop'

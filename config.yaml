@@ -80,6 +80,9 @@ dotfiles:
   d_dconf_bak:
     src: config/dconf_BAK
     dst: ~/.config/dconf_BAK
+  d_sxiv:
+    src: config/sxiv
+    dst: ~/.config/sxiv
 profiles:
   manjaro:
     dotfiles:
@@ -104,3 +107,4 @@ profiles:
     - d_nvim
     - f_plug.vim
     - d_dconf_bak
+    - d_sxiv
