@@ -63,6 +63,7 @@ alias pc='pacman '
 alias pc-m='pacman-mirrors '
 alias sudo='sudo '
 alias watch='watch '
+alias lynx='lynx -accept_all_cookies '
 
 
 weather() {

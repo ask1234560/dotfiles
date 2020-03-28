@@ -83,6 +83,9 @@ dotfiles:
   d_sxiv:
     src: config/sxiv
     dst: ~/.config/sxiv
+  f_pacman.conf:
+    src: etc/pacman.conf
+    dst: /etc/pacman.conf
 profiles:
   manjaro:
     dotfiles:
@@ -108,3 +111,4 @@ profiles:
     - f_plug.vim
     - d_dconf_bak
     - d_sxiv
+    - f_pacman.conf
