@@ -86,6 +86,9 @@ dotfiles:
   f_pacman.conf:
     src: etc/pacman.conf
     dst: /etc/pacman.conf
+  f_update-resolv-conf:
+    src: etc/openvpn/update-resolv-conf
+    dst: /etc/openvpn/update-resolv-conf
 profiles:
   manjaro:
     dotfiles:
@@ -112,3 +115,4 @@ profiles:
     - d_dconf_bak
     - d_sxiv
     - f_pacman.conf
+    - f_update-resolv-conf
