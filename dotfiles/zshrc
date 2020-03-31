@@ -64,6 +64,9 @@ alias pc-m='pacman-mirrors '
 alias sudo='sudo '
 alias watch='watch '
 alias lynx='lynx -accept_all_cookies '
+alias cip='curl ipinfo.io '
+alias vpnc="sudo openvpn --config /home/ananthu/.config/vpnclients/arch.ovpn " 
+
 
 
 weather() {
