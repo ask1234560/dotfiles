@@ -66,7 +66,8 @@ alias watch='watch '
 alias lynx='lynx -accept_all_cookies '
 alias cip='curl ipinfo.io '
 alias vpnc="sudo openvpn --config /home/ananthu/.config/vpnclients/arch.ovpn " 
-
+# Alias --help ; ignore rest of the line 
+alias -g -- --help="--help | less -FX ; true "
 
 
 weather() {
