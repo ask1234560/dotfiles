@@ -89,6 +89,12 @@ dotfiles:
   f_update-resolv-conf:
     src: etc/openvpn/update-resolv-conf
     dst: /etc/openvpn/update-resolv-conf
+  f_xmodmap:
+    src: Xmodmap
+    dst: ~/.Xmodmap
+  f_xmodmap.org:
+    src: Xmodmap.ORG
+    dst: ~/.Xmodmap.ORG
 profiles:
   manjaro:
     dotfiles:
@@ -116,3 +122,5 @@ profiles:
     - d_sxiv
     - f_pacman.conf
     - f_update-resolv-conf
+    - f_xmodmap
+    - f_xmodmap.org
