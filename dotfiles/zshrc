@@ -32,44 +32,6 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
 fi
 
 
-export EDITOR='nvim'
-export VISUAL='nvim'
-
-
-# alias ls='ls --color=auto --group-directories-first'
-# alias la='ls -A --group-directories-first'
-# alias ll='ls -lAh --group-directories-first'
-alias ls='exa --group-directories-first'
-alias la='exa -a --group-directories-first'
-alias ll='exa -alb --group-directories-first'
-alias tree='exa -T'
-alias bm='bashmount'
-alias rg='ranger'
-# alias pst='patch -o config.h -i '
-# alias v='vim '
-# alias gv='gvim '
-alias nv='nvim '
-alias gc='chromium '
-alias fx='firefox-developer-edition '
-alias sclip="xclip -selection c"
-alias gclip="xclip -selection c -o"
-alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python - "
-alias grep='grep --colour=auto'
-# alias egrep='egrep --colour=auto'
-# alias fgrep='fgrep --colour=auto'
-alias nb='newsboat '
-alias irc='irssi '
-alias pc='pacman '
-alias pc-m='pacman-mirrors '
-alias sudo='sudo '
-alias watch='watch '
-alias lynx='lynx -accept_all_cookies '
-alias cip='curl ipinfo.io '
-alias vpnc="sudo openvpn --config /home/ananthu/.config/vpnclients/arch.ovpn " 
-# Alias --help ; ignore rest of the line 
-alias -g -- --help="--help | less -FX ; true "
-
-
 weather() {
     curl wttr.in/${1:-kothamangalam}
 }
@@ -99,6 +61,7 @@ ext ()
     case $1 in
       *.tar.bz2)   tar xjf $1   ;;
       *.tar.gz)    tar xzf $1   ;;
+      *.tar.xz)    tar xJf $1   ;;
       *.bz2)       bunzip2 $1   ;;
       *.rar)       unrar x $1     ;;
       *.gz)        gunzip $1    ;;
@@ -122,11 +85,34 @@ ext ()
   fi
 }
 
-# Your dotdrop git repository location
-export DOTREPO="~/dotfiles"
 
-# dotdrop configs
-alias dotdrop="$DOTREPO/dotdrop.sh"
-alias dotgit="git -C $DOTREPO"
-alias dotsync="dotgit pull && dotgit add -A && dotgit commit && dotgit push; dotdrop install"
-${/home/ananthu/dotfiles/dotdrop/completion/_dotdrop.sh-completion.zsh}
+# nnn configs
+n ()
+{
+    # Block nesting of nnn in subshells
+    if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
+        echo "nnn is already running"
+        return
+    fi
+
+    # The default behaviour is to cd on quit (nnn checks if NNN_TMPFILE is set)
+    # To cd on quit only on ^G, remove the "export" as in:
+    #     NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+    # NOTE: NNN_TMPFILE is fixed, should not be modified
+    NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+
+    # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
+    # stty start undef
+    # stty stop undef
+    # stty lwrap undef
+    # stty lnext undef
+
+    nnn "$@"
+
+    if [ -f "$NNN_TMPFILE" ]; then
+            . "$NNN_TMPFILE"
+            rm -f "$NNN_TMPFILE" > /dev/null
+    fi
+}
+
+source ~/.config/.aliasrc

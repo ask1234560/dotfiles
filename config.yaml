@@ -28,6 +28,16 @@ dotfiles:
   d_xdman:
     src: xdman
     dst: ~/.xdman
+    instignore:
+    - '*/temp'
+    - '*/metadata'
+    - '*/downloads.txt'
+    - '*/queues.txt'
+    upignore:
+    - '*/temp'
+    - '*/metadata'
+    - '*/downloads.txt'
+    - '*/queues.txt'
   d_scripts:
     src: scripts
     dst: ~/.scripts
@@ -92,6 +102,12 @@ dotfiles:
   f_xmodmap:
     src: Xmodmap
     dst: ~/.Xmodmap
+  f_aliasrc:
+    src: config/.aliasrc
+    dst: ~/.config/.aliasrc
+  d_nnn:
+    src: config/nnn
+    dst: ~/.config/nnn
 profiles:
   manjaro:
     dotfiles:
@@ -120,3 +136,5 @@ profiles:
     - f_pacman.conf
     - f_update-resolv-conf
     - f_xmodmap
+    - f_aliasrc
+    - d_nnn

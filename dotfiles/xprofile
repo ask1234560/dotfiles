@@ -1,3 +1,14 @@
+export EDITOR='nvim'
+export VISUAL='nvim'
+export SHELL='zsh'
+export MAILTO="ask1234560@gmail.com"
+
+# dotdrop
+export DOTREPO="~/dotfiles"
+
+# nnn 
+export NNN_BMS='c:~/.config;C:~/Desktop/xtra/Common;d:~/Desktop;D:~/dotfiles;i:/run/media/ananthu;p:~/Pictures;t:~/.local/share/Trash/files;T:~/Downloads/Telegram Desktop'
+
 syncthing &
 bg-changer random &
 xset -dpms &
