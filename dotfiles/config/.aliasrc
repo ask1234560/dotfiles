@@ -24,10 +24,9 @@ alias \
 	cip='curl ipinfo.io ' \
 	vpnc="sudo openvpn --config /home/ananthu/.config/vpnclients/arch.ovpn "  \
 	cp="cpg -g "  \
-	mv="mvg -g "  \
-	sxiv="sxiv -b "  
+	mv="mvg -g "
 
-alias -g -- --help="--help | less -FX ; true " \
+alias -g -- --help="--help | less -FXi ; true "
 
 # dotdrop configs
 alias \

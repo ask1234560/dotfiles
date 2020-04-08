@@ -105,9 +105,6 @@ dotfiles:
   f_aliasrc:
     src: config/.aliasrc
     dst: ~/.config/.aliasrc
-  d_nnn:
-    src: config/nnn
-    dst: ~/.config/nnn
 profiles:
   manjaro:
     dotfiles:
@@ -137,4 +134,3 @@ profiles:
     - f_update-resolv-conf
     - f_xmodmap
     - f_aliasrc
-    - d_nnn
