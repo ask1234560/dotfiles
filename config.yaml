@@ -38,9 +38,6 @@ dotfiles:
     - '*/metadata'
     - '*/downloads.txt'
     - '*/queues.txt'
-  d_scripts:
-    src: scripts
-    dst: ~/.scripts
   d_modified:
     src: Pictures/.wallpaper/modified
     dst: ~/Pictures/.wallpaper/modified
@@ -105,6 +102,9 @@ dotfiles:
   f_aliasrc:
     src: config/.aliasrc
     dst: ~/.config/.aliasrc
+  d_scripts:
+    src: config/scripts
+    dst: ~/.config/scripts
 profiles:
   manjaro:
     dotfiles:
@@ -115,7 +115,6 @@ profiles:
     - d_irssi
     - d_fonts
     - d_xdman
-    - d_scripts
     - d_modified
     - f_gitconfig
     - d_breeze-red
@@ -134,3 +133,4 @@ profiles:
     - f_update-resolv-conf
     - f_xmodmap
     - f_aliasrc
+    - d_scripts
