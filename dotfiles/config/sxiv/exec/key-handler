@@ -10,5 +10,7 @@ do
                 convert -rotate -90 "$file" "$file" ;;
         "y")
                 echo -n "$file" | xclip -selection clipboard ;;
+        "g")
+		gimp "$file" & ;;
         esac
 done

@@ -1,0 +1,357 @@
+
+
+==== section /com/gexperts/Tilix/ ====
+
+
+[/]
+app-title='${title}'
+auto-hide-mouse=true
+control-scroll-zoom=true
+copy-on-select=true
+focus-follow-mouse=false
+middle-click-close=false
+prompt-on-close=true
+quake-height-percent=29
+quake-hide-headerbar=true
+quake-hide-lose-focus=false
+quake-hide-lose-focus-delay=50
+quake-specific-monitor=0
+quake-width-percent=32
+quake-window-position='top'
+session-name='${directory}'
+sidebar-on-right=false
+tab-position='top'
+terminal-title-show-when-single=true
+terminal-title-style='none'
+theme-variant='system'
+use-tabs=false
+window-style='disable-csd-hide-toolbar'
+
+[keybindings]
+nautilus-open='<Primary><Alt>t'
+session-add-down='<Alt>j'
+session-add-right='<Alt>l'
+session-switch-to-terminal-down='<Alt><Super>j'
+session-switch-to-terminal-left='<Alt><Super>h'
+session-switch-to-terminal-right='<Alt><Super>l'
+session-switch-to-terminal-up='<Alt><Super>k'
+win-switch-to-session-0='disabled'
+win-switch-to-session-1='<Primary>1'
+win-switch-to-session-2='<Primary>2'
+win-switch-to-session-3='<Primary>3'
+win-switch-to-session-4='<Primary>4'
+win-switch-to-session-5='<Primary>5'
+win-switch-to-session-6='<Primary>6'
+win-switch-to-session-7='<Primary>7'
+win-switch-to-session-8='<Primary>8'
+win-switch-to-session-9='<Primary>9'
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+background-color='#282828'
+background-transparency-percent=3
+badge-color-set=false
+bold-color-set=false
+bold-is-bright=false
+cell-height-scale=1.0
+cell-width-scale=1.0
+cursor-blink-mode='on'
+cursor-colors-set=false
+cursor-shape='ibeam'
+default-size-columns=150
+default-size-rows=43
+dim-transparency-percent=0
+draw-margin=30
+font='FiraCode Nerd Font Bold 10'
+foreground-color='#EBDBB2'
+highlight-colors-set=false
+login-shell=false
+palette=['#282828', '#CC241D', '#98971A', '#D79921', '#458588', '#B16286', '#689D6A', '#A89984', '#928374', '#FB4934', '#B8BB26', '#FABD2F', '#83A598', '#D3869B', '#8EC07C', '#EBDBB2']
+show-scrollbar=false
+terminal-title='${directory}'
+text-blink-mode='never'
+use-custom-command=false
+use-system-font=false
+use-theme-colors=false
+visible-name='General'
+
+
+==== section /com/solus-project/budgie-panel/ ====
+
+
+[/]
+builtin-theme=true
+confirm-remove-applet=false
+confirm-remove-panel=false
+dark-theme=true
+migration-level=1
+panels=['c12c2e30-d6ec-11e9-81b2-2b2c4fe44f43']
+
+[applets/{0d719f28-d6f2-11e9-81b2-2b2c4fe44f43}]
+alignment='start'
+name='Workspace Switcher'
+position=4
+
+[applets/{4c41a338-d715-11e9-84ac-f82fa8edd7a5}]
+alignment='end'
+name='Budgie Brightness Control'
+position=4
+
+[applets/{4dfa9970-ee8d-11e9-9474-f82fa8edd7a5}]
+alignment='end'
+name='Spacer'
+position=8
+
+[applets/{5a684d10-ee8d-11e9-9474-f82fa8edd7a5}]
+alignment='end'
+name='Spacer'
+position=6
+
+[applets/{6f709030-d76f-11e9-b034-f82fa8edd7a5}]
+alignment='center'
+name='Budgie Brightness Control'
+position=1
+
+[applets/{77604072-ee8c-11e9-b7b4-f82fa8edd7a5}]
+alignment='center'
+name='System Monitor'
+position=0
+
+[applets/{7c3a97ca-d715-11e9-84ac-f82fa8edd7a5}]
+alignment='end'
+name='Spacer'
+position=9
+
+[applets/{9277aeec-d715-11e9-84ac-f82fa8edd7a5}]
+alignment='end'
+name='Spacer'
+position=17
+
+[applets/{9524765a-ee8c-11e9-b7b4-f82fa8edd7a5}]
+alignment='end'
+name='System Tray'
+position=4
+
+[applets/{a4b6fb10-ee8c-11e9-b7b4-f82fa8edd7a5}]
+alignment='end'
+name='User Indicator'
+position=7
+
+[applets/{a8647bda-d707-11e9-b57d-f82fa8edd7a5}]
+alignment='start'
+name='Spacer'
+position=0
+
+[applets/{ba47dcce-ee8c-11e9-b7b4-f82fa8edd7a5}]
+alignment='end'
+name='Places'
+position=5
+
+[applets/{bf09fee6-d707-11e9-b57d-f82fa8edd7a5}]
+alignment='start'
+name='ShowTime'
+position=3
+
+[applets/{c0a80e58-d713-11e9-b03a-f82fa8edd7a5}]
+alignment='end'
+name='Calendar'
+position=0
+
+[applets/{c12d085a-d6ec-11e9-81b2-2b2c4fe44f43}]
+alignment='start'
+name='Budgie Menu'
+position=1
+
+[applets/{c1480c7c-d6ec-11e9-81b2-2b2c4fe44f43}]
+alignment='start'
+name='Spacer'
+position=2
+
+[applets/{c247ef5c-d6ec-11e9-81b2-2b2c4fe44f43}]
+alignment='end'
+name='Spacer'
+position=1
+
+[applets/{c248088e-d6ec-11e9-81b2-2b2c4fe44f43}]
+alignment='end'
+name='System Tray'
+position=4
+
+[applets/{c26a6370-d6ec-11e9-81b2-2b2c4fe44f43}]
+alignment='end'
+name='Status Indicator'
+position=2
+
+[applets/{c27e87c4-d6ec-11e9-81b2-2b2c4fe44f43}]
+alignment='end'
+name='User Indicator'
+position=8
+
+[applets/{c2847486-d6ec-11e9-81b2-2b2c4fe44f43}]
+alignment='end'
+name='Spacer'
+position=7
+
+[applets/{c2912d02-d6ec-11e9-81b2-2b2c4fe44f43}]
+alignment='end'
+name='Raven Trigger'
+position=16
+
+[applets/{c5f2c22a-d6f2-11e9-81b2-2b2c4fe44f43}]
+alignment='end'
+name='Places'
+position=6
+
+[applets/{cebe0f3c-d70f-11e9-ad92-f82fa8edd7a5}]
+alignment='center'
+name='System Monitor'
+position=0
+
+[applets/{e4f33a72-ee8c-11e9-b7b4-f82fa8edd7a5}]
+alignment='end'
+name='Night Light'
+position=3
+
+[applets/{ec5d7344-ee8d-11e9-9474-f82fa8edd7a5}]
+alignment='start'
+name='Spacer'
+position=3
+
+[applets/{ef06db14-e52b-11e9-b902-f82fa8edd7a5}]
+alignment='end'
+name='Night Light'
+position=3
+
+[instance/places-indicator/{ba47dcce-ee8c-11e9-b7b4-f82fa8edd7a5}]
+expand-places=true
+show-label=false
+
+[instance/places-indicator/{c5f2c22a-d6f2-11e9-81b2-2b2c4fe44f43}]
+expand-places=true
+show-label=false
+
+[instance/spacer/{5a684d10-ee8d-11e9-9474-f82fa8edd7a5}]
+size=3
+
+[instance/spacer/{7c3a97ca-d715-11e9-84ac-f82fa8edd7a5}]
+size=1
+
+[instance/spacer/{9277aeec-d715-11e9-84ac-f82fa8edd7a5}]
+size=1
+
+[instance/spacer/{a8647bda-d707-11e9-b57d-f82fa8edd7a5}]
+size=2
+
+[instance/spacer/{c1480c7c-d6ec-11e9-81b2-2b2c4fe44f43}]
+size=10
+
+[instance/spacer/{c247ef5c-d6ec-11e9-81b2-2b2c4fe44f43}]
+size=4
+
+[instance/spacer/{c2847486-d6ec-11e9-81b2-2b2c4fe44f43}]
+size=3
+
+[instance/spacer/{ec5d7344-ee8d-11e9-9474-f82fa8edd7a5}]
+size=3
+
+[panels/{c12c2e30-d6ec-11e9-81b2-2b2c4fe44f43}]
+applets=['a4b6fb10-ee8c-11e9-b7b4-f82fa8edd7a5', '5a684d10-ee8d-11e9-9474-f82fa8edd7a5', 'ec5d7344-ee8d-11e9-9474-f82fa8edd7a5', '9277aeec-d715-11e9-84ac-f82fa8edd7a5', '9524765a-ee8c-11e9-b7b4-f82fa8edd7a5', '77604072-ee8c-11e9-b7b4-f82fa8edd7a5', 'c2912d02-d6ec-11e9-81b2-2b2c4fe44f43', 'ba47dcce-ee8c-11e9-b7b4-f82fa8edd7a5', 'c26a6370-d6ec-11e9-81b2-2b2c4fe44f43', '0d719f28-d6f2-11e9-81b2-2b2c4fe44f43', '4dfa9970-ee8d-11e9-9474-f82fa8edd7a5', 'c247ef5c-d6ec-11e9-81b2-2b2c4fe44f43', 'c0a80e58-d713-11e9-b03a-f82fa8edd7a5', 'c12d085a-d6ec-11e9-81b2-2b2c4fe44f43', 'a8647bda-d707-11e9-b57d-f82fa8edd7a5', 'e4f33a72-ee8c-11e9-b7b4-f82fa8edd7a5']
+dock-mode=false
+enable-shadow=true
+location='top'
+size=35
+theme-regions=false
+transparency='dynamic'
+
+
+==== section /org/gnome/desktop/wm/keybindings/ ====
+
+
+[/]
+move-to-monitor-left=@as []
+move-to-monitor-right=@as []
+move-to-workspace-left=['<Super><Shift>Left']
+move-to-workspace-right=['<Super><Shift>Right']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+
+
+==== section /org/gnome/gnome-screenshot/ ====
+
+
+[/]
+auto-save-directory='file:///home/ananthu/Pictures/Screenshots/'
+border-effect='none'
+delay=0
+include-border=true
+include-pointer=false
+last-save-directory='file:///home/ananthu/Desktop'
+
+
+==== section /org/gnome/settings-daemon/plugins/media-keys/ ====
+
+
+[/]
+area-screenshot=@as []
+area-screenshot-clip=@as []
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/']
+screencast=@as []
+screenshot=['']
+screenshot-clip=['']
+window-screenshot=['']
+window-screenshot-clip=@as []
+
+[custom-keybindings/custom0]
+binding='<Super>F3'
+command='xbacklight -inc 5'
+name='Brightness inc'
+
+[custom-keybindings/custom1]
+binding='<Super>F2'
+command='xbacklight -dec 5'
+name='Brightness dec'
+
+[custom-keybindings/custom10]
+binding='<Super>i'
+command='tilix -e ranger'
+name='ranger'
+
+[custom-keybindings/custom2]
+binding='<Alt><Super>p'
+command='gnome-screenshot'
+name='Screenshot'
+
+[custom-keybindings/custom3]
+binding='<Alt><Super>w'
+command='gnome-screenshot  -w'
+name='Screenshot Current window'
+
+[custom-keybindings/custom4]
+binding='<Alt><Super>c'
+command='gnome-screenshot -c'
+name='Screenshot Clipboard'
+
+[custom-keybindings/custom5]
+binding='<Super>Return'
+command='tilix'
+name='Terminal'
+
+[custom-keybindings/custom6]
+binding='<Super>f'
+command='chromium'
+name='Chromium'
+
+[custom-keybindings/custom7]
+binding='<Super>e'
+command='toggle-nightlight'
+name='Night mode'
+
+[custom-keybindings/custom8]
+binding='<Shift><Super>c'
+command='bg-changer'
+name='Background changer'
+
+[custom-keybindings/custom9]
+command='podcast-mpv'
+name='Podcast mpv'
