@@ -99,12 +99,15 @@ dotfiles:
   f_dconf.bak:
     src: config/dconf.BAK
     dst: ~/.config/dconf.BAK
-  f_xprofile:
-    src: config/.xprofile
-    dst: ~/.config/.xprofile
-  f_xmodmap:
-    src: config/.Xmodmap
-    dst: ~/.config/.Xmodmap
+  f_config_xmodmap:
+    src: config/Xmodmap
+    dst: ~/.config/Xmodmap
+  f_config_xprofile:
+    src: config/Xprofile
+    dst: ~/.config/Xprofile
+  f_xresources:
+    src: config/Xresources
+    dst: ~/.config/Xresources
 profiles:
   manjaro:
     dotfiles:
@@ -132,5 +135,6 @@ profiles:
     - f_aliasrc
     - d_scripts
     - f_dconf.bak
-    - f_xprofile
-    - f_xmodmap
+    - f_config_xmodmap
+    - f_config_xprofile
+    - f_xresources
