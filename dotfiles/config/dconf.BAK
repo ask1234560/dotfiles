@@ -47,7 +47,7 @@ win-switch-to-session-8='<Primary>8'
 win-switch-to-session-9='<Primary>9'
 
 [profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
-background-color='#282828'
+background-color='#1E1F29'
 background-transparency-percent=3
 badge-color-set=false
 bold-color-set=false
@@ -62,10 +62,10 @@ default-size-rows=43
 dim-transparency-percent=0
 draw-margin=30
 font='FiraCode Nerd Font Bold 10'
-foreground-color='#EBDBB2'
+foreground-color='#F8F8F2'
 highlight-colors-set=false
 login-shell=false
-palette=['#282828', '#CC241D', '#98971A', '#D79921', '#458588', '#B16286', '#689D6A', '#A89984', '#928374', '#FB4934', '#B8BB26', '#FABD2F', '#83A598', '#D3869B', '#8EC07C', '#EBDBB2']
+palette=['#000000', '#FF5555', '#50FA7B', '#F1FA8C', '#BD93F9', '#FF79C6', '#8BE9FD', '#BBBBBB', '#555555', '#FF5555', '#50FA7B', '#F1FA8C', '#BD93F9', '#FF79C6', '#8BE9FD', '#FFFFFF']
 show-scrollbar=false
 terminal-title='${directory}'
 text-blink-mode='never'
@@ -283,10 +283,10 @@ switch-to-workspace-4=['<Super>4']
 [/]
 auto-save-directory='file:///home/ananthu/Pictures/Screenshots/'
 border-effect='none'
-delay=0
+delay=5
 include-border=true
-include-pointer=false
-last-save-directory='file:///home/ananthu/Desktop'
+include-pointer=true
+last-save-directory='file:///home/ananthu/Pictures/Screenshots'
 
 
 ==== section /org/gnome/settings-daemon/plugins/media-keys/ ====
@@ -295,7 +295,7 @@ last-save-directory='file:///home/ananthu/Desktop'
 [/]
 area-screenshot=@as []
 area-screenshot-clip=@as []
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/']
 screencast=@as []
 screenshot=['']
 screenshot-clip=['']
@@ -316,6 +316,11 @@ name='Brightness dec'
 binding='<Super>i'
 command='tilix -e ranger'
 name='ranger'
+
+[custom-keybindings/custom11]
+binding='<Super>t'
+command='tilix -e htop'
+name='htop'
 
 [custom-keybindings/custom2]
 binding='<Alt><Super>p'
