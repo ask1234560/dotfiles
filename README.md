@@ -17,8 +17,8 @@ configs, scripts, themes and wallpapers included
 * git submodule update --recursive 
 * pipenv install -r dotdrop/requirements.txt
 * pipenv shell
-* substitute username 
-   * < config.yaml |  awk '{gsub(/manjaro/,"kali")} {print $0}' | tee config.yaml
+* substitute hostname 
+   * < config.yaml |  awk '{gsub(/manjaro/,"hostname")} {print $0}' | tee config.yaml
 * ./dotdrop.sh install
 * to remove backup files
    * find ~ -regextype grep -regex '.*/*dotdropbak' -exec rm {} \;
