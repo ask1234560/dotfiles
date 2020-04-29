@@ -8,6 +8,7 @@ configs, scripts, themes and wallpapers included
   * chsh -s $(which zsh)
 
 ## Installation 
+```
 * cd ~
 * git clone https://github.com/ask1234560/dotfiles 
 * cd dotfiles
@@ -20,4 +21,5 @@ configs, scripts, themes and wallpapers included
    * < config.yaml |  awk '{gsub(/manjaro/,"kali")} {print $0}' | tee config.yaml
 * ./dotdrop.sh install
 * to remove backup files
-   * find ~ -regextype grep -regex '.*/*dotdropbak' -exec rm {} \\;
+   * find ~ -regextype grep -regex '.*/*dotdropbak' -exec rm {} \;
+```
