@@ -18,7 +18,7 @@ configs, scripts, themes and wallpapers included
 * pipenv install -r dotdrop/requirements.txt
 * pipenv shell
 * substitute hostname 
-   * < config.yaml |  awk '{gsub(/manjaro/,"hostname")} {print $0}' | tee config.yaml
+   * awk '{gsub(/manjaro/,"hostname")} {print $0}' config.yaml | tee config.yaml
 * ./dotdrop.sh install
 * to remove backup files
    * find ~ -regextype grep -regex '.*/*dotdropbak' -exec rm {} \;
